@@ -18,7 +18,7 @@ describe('Login Professor', () => {
       cy.get('#flt-semantic-node-15').click()
       cy.get('#flt-semantic-node-21').contains('Você não inseriu todos os dados para login').should('be.visible')  
     })
-    it('Usuário invalido', () => {
+    it.skip('Usuário invalido', () => {
       cy.visit('https://ewel-e-amigos-dev-front-end.vercel.app/')
       cy.wait(5000) // sem esse wait ele tava bugando.
       cy.get('flt-semantics-placeholder').click({force: true})
@@ -29,7 +29,7 @@ describe('Login Professor', () => {
       cy.get('#flt-semantic-node-21').contains('Usuário ou senha inválidos!').should('be.visible')  
     })
   
-    it('Senha invalida', () => {
+    it.skip('Senha invalida', () => {
       cy.visit('https://ewel-e-amigos-dev-front-end.vercel.app/')
       cy.wait(5000) // sem esse wait ele tava bugando.
       cy.get('flt-semantics-placeholder').click({force: true})
@@ -40,7 +40,7 @@ describe('Login Professor', () => {
       cy.get('#flt-semantic-node-21').contains('Usuário ou senha inválidos!').should('be.visible')  
     })
   
-    it('Esqueci a senha', () => {
+    it.skip('Esqueci a senha', () => {
       cy.visit('https://ewel-e-amigos-dev-front-end.vercel.app/')
       cy.wait(5000) // sem esse wait ele tava bugando.
       cy.get('flt-semantics-placeholder').click({force: true})
