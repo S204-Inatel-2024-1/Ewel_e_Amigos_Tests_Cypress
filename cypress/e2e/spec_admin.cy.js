@@ -62,9 +62,9 @@ describe('Login Administrador', () => {
       cy.get('#flt-semantic-node-15').click()
       cy.wait(10000)
       cy.get('#flt-semantic-node-31').click()
-      cy.get('#flt-semantic-node-44 > span').contains('Você escolheu inserir os dados manualmente').should('be.visible')
-      cy.get('#flt-semantic-node-51').click()
-      cy.get('#flt-semantic-node-56 > span').contains('Se a equipe não possui algum integrante, deixar os campos em branco')
+      cy.get('#flt-semantic-node-52 > span').contains('Você escolheu inserir os dados manualmente').should('be.visible')
+      cy.get('#flt-semantic-node-59').click()
+      cy.get('#flt-semantic-node-64 > span').contains('Se a equipe não possui algum integrante, deixar os campos em branco')
     })
     
     
