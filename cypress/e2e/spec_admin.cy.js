@@ -1,5 +1,5 @@
 describe('Login Administrador', () => {
-    it.skip('Entrando no admin', () => {
+    it('Entrando no admin', () => {
       cy.visit('https://ewel-e-amigos-dev-front-end.vercel.app/')
       cy.wait(5000) // sem esse wait ele tava bugando.
       cy.get('flt-semantics-placeholder').click({force: true})
@@ -11,7 +11,7 @@ describe('Login Administrador', () => {
       cy.get('#flt-semantic-node-19').contains('Olá, Filipe.').should('be.visible')
     })
 
-    it.skip('Checando as fases', () => {
+    it('Checando as fases', () => {
       cy.visit('https://ewel-e-amigos-dev-front-end.vercel.app/')
       cy.wait(5000) // sem esse wait ele tava bugando.
       cy.get('flt-semantics-placeholder').click({force: true})
@@ -26,7 +26,7 @@ describe('Login Administrador', () => {
       cy.get('#flt-semantic-node-19').contains('Olá, Filipe.').should('be.visible')
     })
 
-    it.skip('Checando o projeto 1', () => {
+    it('Checando o projeto 1', () => {
       cy.visit('https://ewel-e-amigos-dev-front-end.vercel.app/')
       cy.wait(5000) // sem esse wait ele tava bugando.
       cy.get('flt-semantics-placeholder').click({force: true})
@@ -39,7 +39,7 @@ describe('Login Administrador', () => {
       cy.get('#flt-semantic-node-44 > span').contains('Abaixo, está as informações da equipe X').should('be.visible')
     })
 
-    it.skip('Importar planilha', () => {
+    it('Importar planilha', () => {
       cy.visit('https://ewel-e-amigos-dev-front-end.vercel.app/')
       cy.wait(5000) // sem esse wait ele tava bugando.
       cy.get('flt-semantics-placeholder').click({force: true})
