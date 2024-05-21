@@ -21,9 +21,9 @@ describe('Login Administrador', () => {
       cy.get('#flt-semantic-node-15').click()
       cy.wait(10000)
       cy.get('#flt-semantic-node-27').click()
-      cy.get('#flt-semantic-node-46').contains('As fases já criadas estão listadas abaixo').should('be.visible')
-      cy.get('#flt-semantic-node-66').click()
-      cy.get('#flt-semantic-node-19').contains('Olá, Filipe.').should('be.visible')
+      cy.get('#flt-semantic-node-54 > span').contains('As fases já criadas estão listadas abaixo').should('be.visible')
+      cy.get('#flt-semantic-node-74').click()
+      cy.get('#flt-semantic-node-19 > span').contains('Olá, Filipe.').should('be.visible')
     })
 
     it('Checando o projeto 1', () => {
@@ -36,9 +36,9 @@ describe('Login Administrador', () => {
       cy.get('#flt-semantic-node-15').click()
       cy.wait(10000)
       cy.get('#flt-semantic-node-36').click({force: true})
-      cy.get('#flt-semantic-node-44 > span').contains('Abaixo, está as informações da equipe X').should('be.visible')
+      cy.get('#flt-semantic-node-52 > span').contains('Abaixo, está as informações da equipe X').should('be.visible')
     })
-
+    
     it('Importar planilha', () => {
       cy.visit('https://ewel-e-amigos-dev-front-end.vercel.app/')
       cy.wait(5000) // sem esse wait ele tava bugando.
@@ -49,7 +49,7 @@ describe('Login Administrador', () => {
       cy.get('#flt-semantic-node-15').click()
       cy.wait(10000)
       cy.get('#flt-semantic-node-29').click()
-      cy.get('#flt-semantic-node-48').contains('Importar planilha')
+      cy.get('#flt-semantic-node-56').contains('Importar planilha')
     })
 
     it('Cadastrar Manualmente', () => {
@@ -66,9 +66,6 @@ describe('Login Administrador', () => {
       cy.get('#flt-semantic-node-59').click()
       cy.get('#flt-semantic-node-64 > span').contains('Se a equipe não possui algum integrante, deixar os campos em branco')
     })
-    
-    
-    
+
   })
-  
   
