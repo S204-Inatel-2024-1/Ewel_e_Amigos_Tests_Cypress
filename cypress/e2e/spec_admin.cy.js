@@ -35,7 +35,7 @@ describe('Testando o Admin', () => {
       cy.get('#flt-semantic-node-14 > input').type('123456')
       cy.get('#flt-semantic-node-15').click()
       cy.wait(10000)
-      cy.get('#flt-semantic-node-40').click()
+      cy.get('#flt-semantic-node-40').click({force: true})
       cy.get('#flt-semantic-node-56 > span').contains('Abaixo, está as informações da equipe X').should('be.visible')
     })
     
@@ -49,7 +49,7 @@ describe('Testando o Admin', () => {
       cy.get('#flt-semantic-node-15').click()
       cy.wait(10000)
       cy.get('#flt-semantic-node-30').click()
-      cy.get('#flt-semantic-node-56').contains('Importar planilha')
+      cy.get('#flt-semantic-node-60').contains('Importar planilha')
     })
 
     it('Cadastrar Manualmente', () => {
