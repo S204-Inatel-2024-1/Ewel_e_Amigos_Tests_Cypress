@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open":"cypress open",
+    "cypress:open": "cypress open",
     "test:cypress": "cypress run"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.8.0",
-    "mochawesome": "^6.2.2"
+    "mochawesome": "^6.3.1"
   }
 }
