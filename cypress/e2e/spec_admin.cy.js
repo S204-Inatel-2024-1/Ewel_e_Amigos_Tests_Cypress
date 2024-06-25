@@ -1,4 +1,4 @@
-describe('Login Administrador', () => {
+describe('Testando o Admin', () => {
     it('Entrando no admin', () => {
       cy.visit('https://ewel-e-amigos-dev-front-end.vercel.app/')
       cy.wait(5000) // sem esse wait ele tava bugando.
