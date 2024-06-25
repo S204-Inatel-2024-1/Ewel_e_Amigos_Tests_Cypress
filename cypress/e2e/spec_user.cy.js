@@ -3,7 +3,7 @@ describe('Testando o aluno', () => {
       cy.visit('https://ewel-e-amigos-dev-front-end.vercel.app/')
       cy.wait(5000) // sem esse wait ele tava bugando.
       cy.get('flt-semantics-placeholder').click({force: true})
-      cy.get('#flt-semantic-node-5 > span').click()
+      cy.get('#flt-semantic-node-4 > span').click()
       cy.get('#flt-semantic-node-12 > input').type('alvarolacerdaribeiro@gmail.com')
       cy.get('#flt-semantic-node-14 > input').type('848571')
       cy.get('#flt-semantic-node-15').click()
@@ -28,10 +28,6 @@ describe('Testando o aluno', () => {
         cy.get('#flt-semantic-node-51 > input').type('2024-06-25')
         cy.get('#flt-semantic-node-53').click()
         cy.get('#flt-semantic-node-53').contains('Criar').should('be.visible')
-
-
-
-
       })
 
   })
